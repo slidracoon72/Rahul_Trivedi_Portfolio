@@ -1,3 +1,8 @@
 sudo rm -rf node_modules package-lock.json
 sudo npm install
 sudo npm run start
+
+// To build and deploy on Github Pages
+sudo npm install
+sudo npm run build
+sudo npm run deploy
