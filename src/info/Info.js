@@ -1,15 +1,17 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
 import mock5 from "../img/mock5.png"
+import moodmusica from "../img/mood-musica.png"
+import eventflow from "../img/eventflow.png"
+import jobtracker from "../img/jobtracker.png"
+import jira from "../img/jira.png"
 
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
+// export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
+export let colors = ["rgb(255, 102, 102)", "rgb(51, 153, 255)"];
+
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -34,7 +36,7 @@ export const info = {
     position: "a Full Stack Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
-    baseColor: colors[0],
+    baseColor: "rgb(0,255,164)",
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '👨‍🎓',
@@ -74,18 +76,18 @@ export const info = {
             icon: "fa fa-twitter",
             label: 'twitter'
         }
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
+        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
+        // Just change the links so that they lead to your social profiles.
 
     ],
     bio: "Hello! I'm Rahul. I'm a Master's Student at Purdue University. I enjoy planting, hiking, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
     skills:
-        {
-            proficientWith: ['java', 'python', 'php', 'javascript', 'react.js', 'node.js', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'OOPs'],
-            exposedTo: ['rust', 'C#', 'C/C++', 'react native', 'android', 'vue.js', 'AWS', 'docker', 'mocha', 'cypress'],
-            framework: ['springboot', 'flask', '.NET', 'express.js', 'django'],
-            database: ['mongodb', 'firebase', 'mysql', 'postgresql', 'ms sql', 'oracle sql']
-        }
+    {
+        proficientWith: ['java', 'python', 'php', 'javascript', 'react.js', 'node.js', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'OOPs'],
+        exposedTo: ['rust', 'C#', 'C/C++', 'react native', 'android', 'vue.js', 'AWS', 'docker', 'mocha', 'cypress'],
+        framework: ['springboot', 'flask', '.NET', 'express.js', 'django'],
+        database: ['mongodb', 'firebase', 'mysql', 'postgresql', 'ms sql', 'oracle sql']
+    }
     ,
     hobbies: [
         {
@@ -104,8 +106,8 @@ export const info = {
             label: 'cooking',
             emoji: '🌶'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
+        // Same as above, change the emojis to match / relate to your hobbies or interests.
+        // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
     education: [
         {
@@ -124,38 +126,43 @@ export const info = {
             end: "June 2021",
             gpa: "8.19/10.0"
         }
-// I've included a few examples, feel free to add more or remove them. Just make sure to keep the format consistent (i.e. same keys)
+        // I've included a few examples, feel free to add more or remove them. Just make sure to keep the format consistent (i.e. same keys)
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            title: "Mood-Musica",
+            // live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/slidracoon72/mood-musica", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: moodmusica,
+            techstack: ['React.js, Python Flask, Google Firebase, Spotify API, Face API']
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2
+            title: "Event-Flow",
+            // live: "https://paytonpierce.dev",
+            source: "https://github.com/slidracoon72/EventFlow",
+            image: eventflow,
+            techstack: ['React.js, Java Springboot, PostgreSQL']
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
+            title: "JobTracker - A Google Chrome Extension",
+            // live: "https://paytonpierce.dev",
+            source: "https://github.com/slidracoon72/Jobtracker",
+            image: jobtracker,
+            techstack: ['React.js, C# .NET, MS Azure']
         },
         {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
+            title: "Jira Clone",
+            // live: "https://paytonpierce.dev",
+            source: "https://github.com/slidracoon72/Jira-Clone",
+            image: jira,
+            techstack: ['React.js, Node.js, Bootstrap']
         },
         {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
+            title: "Other Projects on GitHub...",
+            // live: "https://paytonpierce.dev",
+            source: "https://github.com/slidracoon72",
+            image: mock5,
+            techstack: ['Check my GitHub Page to see all my work!']
         }
     ]
 }
