@@ -7,7 +7,8 @@ import { info } from "../../info/Info";
 
 
 export default function About({ innerRef }) {
-    const firstName = info.firstName.toLowerCase()
+
+    const firstName = info.firstName.toLowerCase();
 
     function aboutMeText() {
         return <>
@@ -29,6 +30,22 @@ export default function About({ innerRef }) {
             <ul>
                 {info.education.map((school, index) => (
                     <li key={index}><span style={{ color: info.baseColor }}>{school.area}</span> @ {school.institution} GPA: {school.gpa} [{school.start} - {school.end}]</li>
+                ))}
+            </ul>
+        </>;
+    }
+
+    function certificates() {
+        return <>
+            <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+                certifications</p>
+            <p><span style={{ color: info.baseColor }}>certifications <span
+                className={Style.green}>(main)</span> $</span> ls</p>
+            <ul>
+                {info.certificates.map((certificate, index) => (
+                    <li
+                        key={index}><span style={{ color: info.baseColor }}>{certificate.title}</span> by {certificate.by} <a href={certificate.source} rel="noreferrer" target='_blank'>View</a>
+                    </li>
                 ))}
             </ul>
         </>;
@@ -59,7 +76,7 @@ export default function About({ innerRef }) {
         </>;
     }
 
-    function miscText() {
+    function hobbiesText() {
         return <>
             <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cd
                 hobbies/interests</p>
@@ -73,6 +90,21 @@ export default function About({ innerRef }) {
         </>;
     }
 
+    function researchPublications() {
+        return <>
+            <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+                research/publications</p>
+            <p><span style={{ color: info.baseColor }}> research/publications <span
+                className={Style.green}>(main)</span> $</span> ls</p>
+            <ul>
+                {info.research.map((research, index) => (
+                    <li key={index}>
+                        <p>{research.title} <span className={Style.green}> <a href={research.source} rel="noreferrer" target='_blank'>{research.journal}</a></span></p></li>
+                ))}
+            </ul>
+        </>
+    }
+
     function handleDownloadResume() {
         const link = document.createElement('a');
         link.href = `${process.env.PUBLIC_URL}/resume.pdf`;  // Path to your resume file
@@ -82,16 +114,15 @@ export default function About({ innerRef }) {
 
     return (
         <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'}>
-            {/* <Button variant="contained" color="primary" onClick={handleDownloadResume} style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-                Download Resume
-            </Button> */}
+            <Terminal id="about" text={aboutMeText()} heading="about me" />
             <TerminalButton onClick={handleDownloadResume}>
                 "The Resume of Your Dreams (Or Nightmares)"
             </TerminalButton>
-            <Terminal text={aboutMeText()} />
-            <Terminal text={educationText()} />
-            <Terminal text={skillsText()} />
-            <Terminal text={miscText()} />
+            <Terminal id="education" text={educationText()} heading="education" />
+            <Terminal id="skills" text={skillsText()} heading="skills" />
+            <Terminal id="certificates" text={certificates()} heading="certifications" />
+            <Terminal id="research" text={researchPublications()} heading="research work" />
+            <Terminal id="hobbies" text={hobbiesText()} heading="hobbies" />
         </Box>
     )
 }

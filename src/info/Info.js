@@ -164,5 +164,74 @@ export const info = {
             image: mock5,
             techstack: ['Check my GitHub Page to see all my work!']
         }
+    ],
+    certificates: [
+        {
+            title: "Front-End Web Development with React",
+            source: "https://coursera.org/share/077927876250c8c191ef31627a0fbf75",
+            by: "The Hong Kong University of Science and Technology"
+        },
+        {
+            title: "Neural Networks and Deep Learning",
+            source: "https://coursera.org/share/2139da80b28478d4df39243af64e41f7",
+            by: "DeepLearning.AI"
+        },
+        {
+            title: "Building Deep Learning Models with TensorFlow",
+            source: "https://coursera.org/share/47606f0131dcfb0ccc7e8933d5015421",
+            by: "IBM"
+        },
+        {
+            title: "Machine Learning with Python",
+            source: "https://coursera.org/share/01b4bad4f1f3165d4fa8d20a80aca29e",
+            by: "IBM"
+        },
+        {
+            title: "How Google does Machine Learning",
+            source: "https://coursera.org/share/994eba10072507dc7ca271bf2a1ad6e8",
+            by: "Google Cloud"
+        },
+        {
+            title: "Rust Fundamentals",
+            source: "https://coursera.org/share/9b73423b6834dd6ba1aa9bc0cb70e6cc",
+            by: "Duke University"
+        },
+        {
+            title: "Concurrent Programming in Java",
+            source: "https://coursera.org/share/b376be44195029000b8f34e5c333ee07",
+            by: "Rice University"
+        },
+        {
+            title: "The Unix Workbench",
+            source: "https://coursera.org/share/761551a442212ddf001c197213fd1e1e",
+            by: "Johns Hopkins University"
+        },
+        {
+            title: "Cryptography I",
+            source: "https://coursera.org/share/ce63d384173a25280d37fc5bd05269e0",
+            by: "Stanford University"
+        },
+        {
+            title: "Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital",
+            source: "https://coursera.org/share/60ac869bf63d9a7533d109effcbe5511",
+            by: "Duke University"
+        },
+        {
+            title: "Ethical Leadership Through Giving Voice to Values",
+            source: "https://coursera.org/share/94b57019c0b1413c59ad0e386572471f",
+            by: "University of Virginia"
+        }
+    ],
+    research: [
+        {
+            title: "A Novel Machine Learning Inspired Algorithm To Predict Real-Time Network Intrusions",
+            journal: "Springer",
+            source: "https://link.springer.com/article/10.1007/s41870-022-00925-w"
+        },
+        {
+            title: "K-Mean and Mean Shift Algorithms in Machine Learning Model for Efficient Malware Categorization",
+            journal: "Inder Science Publishers",
+            source: "https://www.researchgate.net/publication/361519983_K-mean_and_mean-shift_algorithms_in_machine_learning_model_for_efficient_malware_categorisation"
+        }
     ]
 }
