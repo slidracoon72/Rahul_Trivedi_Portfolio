@@ -6,3 +6,80 @@ sudo npm run start
 sudo npm install
 sudo npm run build
 sudo npm run deploy
+
+-----------------------------
+Containerize a React Application:
+
+1. Create a Dockerfile in root directory.
+Example Dockerfile:
+
+# Use the official Node.js image as a base image
+FROM node:14-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install the project dependencies
+RUN npm install
+
+# Copy the rest of the application code to the working directory
+COPY . .
+
+# Build the React app for production
+RUN npm run build
+
+# Install a simple web server to serve the static files
+RUN npm install -g serve
+
+# Expose the port on which the app will run
+EXPOSE 5000
+
+# Set the command to run the web server
+CMD ["serve", "-s", "build", "-l", "5000"]
+
+2. Create a .dockerignore File (in root directory)
+
+Example:
+
+node_modules
+build
+
+// Note: Before building Docker Image, build the React Application:
+sudo rm -rf node_modules package-lock.json
+sudo npm install
+sudo npm run build
+
+3. Build the Docker Image
+docker build -t my-portfolio-app .
+
+4. Run the Docker Container
+docker run -p 5000:5000 my-portfolio-app
+-----------------------------
+
+Share Docker Image
+
+Pushing the Docker Container Image To Docker Hub
+
+1. Tag Your Docker Image
+docker tag my-portfolio-app:latest trivedirahul1999/my-portfolio-app:1.0
+
+2. Push Your Image to Docker Hub
+// Login to Docker Hub
+docker login
+//username: trivedirahul1999@gmail.com
+//pass: S...72#
+
+// Push the Image to Docker Hub
+docker push trivedirahul1999/my-portfolio-app:1.0
+
+3. Pull and Run the Image on Other Systems
+// Pull the Image
+docker pull trivedirahul1999/my-portfolio-app:1.0
+
+// Run the image
+docker run -p 5000:5000 trivedirahul1999/my-portfolio-app:1.0
+
+-----------------------------
