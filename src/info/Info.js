@@ -83,8 +83,8 @@ export const info = {
     bio: "Hello! I'm Rahul. I'm a Master's Student at Purdue University. I enjoy planting, hiking, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
     skills:
     {
-        proficientWith: ['java', 'python', 'php', 'javascript', 'react.js', 'node.js', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'OOPs'],
-        exposedTo: ['rust', 'C#', 'C/C++', 'react native', 'android', 'vue.js', 'AWS', 'docker', 'mocha', 'cypress'],
+        proficientWith: ['java', 'python', 'php', 'javascript', 'react.js', 'node.js', 'git', 'github', 'bitbucket', 'API design', 'bootstrap', 'html5', 'css3', 'figma', 'OOPs'],
+        exposedTo: ['rust', 'C#', 'C/C++', 'react native', 'android', 'vue.js', 'sass/scss', 'tailwind', 'AWS', 'docker', 'kubernetes', 'mocha', 'cypress'],
         framework: ['springboot', 'flask', '.NET', 'express.js', 'django'],
         database: ['mongodb', 'firebase', 'mysql', 'postgresql', 'ms sql', 'oracle sql']
     }
@@ -195,6 +195,11 @@ export const info = {
             title: "Rust Fundamentals",
             source: "https://coursera.org/share/9b73423b6834dd6ba1aa9bc0cb70e6cc",
             by: "Duke University"
+        },
+        {
+            title: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+            source: "https://coursera.org/share/9aa05604807d78018379c13055666024",
+            by: "IBM"
         },
         {
             title: "Concurrent Programming in Java",
