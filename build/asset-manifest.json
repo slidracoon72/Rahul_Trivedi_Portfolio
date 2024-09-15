@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Rahul_Trivedi_Portfolio/static/css/main.4b587a68.css",
-    "main.js": "/Rahul_Trivedi_Portfolio/static/js/main.64b371c2.js",
+    "main.js": "/Rahul_Trivedi_Portfolio/static/js/main.d63731bd.js",
     "static/media/self.png": "/Rahul_Trivedi_Portfolio/static/media/self.67ccdbe4d21b6466690c.png",
     "static/media/eventflow.png": "/Rahul_Trivedi_Portfolio/static/media/eventflow.c770877bce06111734b9.png",
     "static/media/mood-musica.png": "/Rahul_Trivedi_Portfolio/static/media/mood-musica.597750253f4479bf11a8.png",
@@ -10,10 +10,10 @@
     "static/media/jira.png": "/Rahul_Trivedi_Portfolio/static/media/jira.f1d112bd6bb0309ddfa0.png",
     "index.html": "/Rahul_Trivedi_Portfolio/index.html",
     "main.4b587a68.css.map": "/Rahul_Trivedi_Portfolio/static/css/main.4b587a68.css.map",
-    "main.64b371c2.js.map": "/Rahul_Trivedi_Portfolio/static/js/main.64b371c2.js.map"
+    "main.d63731bd.js.map": "/Rahul_Trivedi_Portfolio/static/js/main.d63731bd.js.map"
   },
   "entrypoints": [
     "static/css/main.4b587a68.css",
-    "static/js/main.64b371c2.js"
+    "static/js/main.d63731bd.js"
   ]
 }

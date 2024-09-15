@@ -192,6 +192,12 @@ export const info = {
             by: "Google Cloud"
         },
         {
+            title: "Building Generative AI-Powered Applications with Python",
+            source: "https://coursera.org/share/245ee30a0fbf41aeb56404062e5333cd",
+            by: "IBM"
+
+        },
+        {
             title: "Rust Fundamentals",
             source: "https://coursera.org/share/9b73423b6834dd6ba1aa9bc0cb70e6cc",
             by: "Duke University"
