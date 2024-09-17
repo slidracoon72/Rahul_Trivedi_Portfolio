@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Rahul_Trivedi_Portfolio/static/css/main.4b587a68.css",
-    "main.js": "/Rahul_Trivedi_Portfolio/static/js/main.d63731bd.js",
+    "main.js": "/Rahul_Trivedi_Portfolio/static/js/main.7242d93b.js",
     "static/media/self.png": "/Rahul_Trivedi_Portfolio/static/media/self.67ccdbe4d21b6466690c.png",
+    "static/media/gen_ai.png": "/Rahul_Trivedi_Portfolio/static/media/gen_ai.104cfc07e9cfac98fbd8.png",
     "static/media/eventflow.png": "/Rahul_Trivedi_Portfolio/static/media/eventflow.c770877bce06111734b9.png",
     "static/media/mood-musica.png": "/Rahul_Trivedi_Portfolio/static/media/mood-musica.597750253f4479bf11a8.png",
     "static/media/mock5.png": "/Rahul_Trivedi_Portfolio/static/media/mock5.c9b5f54e8517e13fc897.png",
@@ -10,10 +11,10 @@
     "static/media/jira.png": "/Rahul_Trivedi_Portfolio/static/media/jira.f1d112bd6bb0309ddfa0.png",
     "index.html": "/Rahul_Trivedi_Portfolio/index.html",
     "main.4b587a68.css.map": "/Rahul_Trivedi_Portfolio/static/css/main.4b587a68.css.map",
-    "main.d63731bd.js.map": "/Rahul_Trivedi_Portfolio/static/js/main.d63731bd.js.map"
+    "main.7242d93b.js.map": "/Rahul_Trivedi_Portfolio/static/js/main.7242d93b.js.map"
   },
   "entrypoints": [
     "static/css/main.4b587a68.css",
-    "static/js/main.d63731bd.js"
+    "static/js/main.7242d93b.js"
   ]
 }

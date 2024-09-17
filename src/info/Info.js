@@ -4,6 +4,7 @@ import moodmusica from "../img/mood-musica.png"
 import eventflow from "../img/eventflow.png"
 import jobtracker from "../img/jobtracker.png"
 import jira from "../img/jira.png"
+import gen_ai from "../img/gen_ai.png"
 
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -135,6 +136,12 @@ export const info = {
             source: "https://github.com/slidracoon72/mood-musica", // this should be a link to the **repository** of the project, where the code is hosted.
             image: moodmusica,
             techstack: ['React.js, Python Flask, Google Firebase, Spotify API, Face API']
+        },
+        {
+            title: "Generative AI Apps In Python",
+            source: "https://github.com/slidracoon72/Generative-AI-Powered-Applications-with-Python",
+            image: gen_ai,
+            techstack: ['Python, OpenAI API, Meta Llama, STT, TTS, Gradio']
         },
         {
             title: "Event-Flow",
