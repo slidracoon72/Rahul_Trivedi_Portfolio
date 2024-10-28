@@ -215,6 +215,11 @@ export const info = {
             by: "IBM"
         },
         {
+            title: "Continuous Integration and Continuous Delivery (CI/CD)",
+            source: "https://coursera.org/share/128d28623249a51a78f94a3874d050ad",
+            by: "IBM"
+        },
+        {
             title: "Concurrent Programming in Java",
             source: "https://coursera.org/share/b376be44195029000b8f34e5c333ee07",
             by: "Rice University"
