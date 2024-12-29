@@ -50,7 +50,7 @@ export default function BaseLayout() {
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
                   <p>created with &hearts; by <a href={'https://www.linkedin.com/in/rahul-trivedi-7b82a8173/'}>Rahul Trivedi</a></p>
-                  <p>&copy; 2024</p>
+                  <p>&copy; 2025</p>
                </Box>
             </Grid>
          </Grid>
