@@ -81,7 +81,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Rahul. I completed my Master's in Computer Scince from Purdue University. I am a Software Engineer who loves to solve complex problems. I enjoy planting, hiking, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Rahul. I completed my Master's in Computer Science from Purdue University. I am a Software Engineer who loves to solve complex problems. I enjoy planting, hiking, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
     skills:
     {
         proficientWith: ['java', 'python', 'php', 'javascript', 'react.js', 'node.js', 'git', 'github', 'bitbucket', 'API design', 'bootstrap', 'html5', 'css3', 'figma', 'OOPs'],
